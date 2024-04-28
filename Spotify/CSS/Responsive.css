@@ -166,6 +166,12 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+        .content .user_box {
+            top: 275px;
+            left: 130px;
+            width: 415px;
+            height: 300px;
+        }
         /*Login*/
         .login form{
             padding:50px 45px;
