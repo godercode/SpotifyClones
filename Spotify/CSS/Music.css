@@ -188,6 +188,9 @@
 .music-box .play-song {
     display: flex;
 }
+.play-song{
+    display:block;
+}
 
     .music-box .play-song img {
         width: 55px;

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../CSS/Music2.css" />
      <link rel="stylesheet" href="../CSS/StyleSheet1.css" />
   <link rel="stylesheet" href="../CSS/Profile.css" />
+    <link rel="stylesheet" href="../CSS/Responsive.css" />
   </head>
   <body>
     <div class="wrapper">

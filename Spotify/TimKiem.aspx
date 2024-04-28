@@ -100,7 +100,7 @@
                         </a>
                     </div>
                     <h2>Browse all</h2>
-                    <ul class="spotify albums">
+                    <ul class="spotify albums search_music">
                         <li class="item">
                             <img src="../Images/chungTaCuaTuongLai.jfif" alt="Podcasts">
                             <h2>Chúng ta của tương lai</h2>

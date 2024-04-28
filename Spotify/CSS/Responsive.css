@@ -116,4 +116,59 @@
         .last-btn {
             display: none;
         }
+        /*Trang music*/
+        .music-box .play-song img {
+            margin-right:-20px;
+        }
+        .play-song h5 {
+            display: none;
+        }
+        .play-song p {
+            display: none;
+        }
+        .seek-bar{
+            width:230px;
+        }
+        .current-time{
+            left:0px;
+            top:-20px;
+        }
+        .music-time{
+            right:-0px;
+            top:-20px;
+        }
+        .music-volumn span{
+            left:-20px;
+        }
+        .music-volumn .volumn {
+            width: 75px;
+        }
+        /*Trang tìm kiếm*/
+        #search-box{
+            margin-left:-160px;
+        }
+        .search_music {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        /*Trang profile*/
+        .playlist-song li p{
+            display:none;
+        }
+        .avatar{
+            width:300px;
+            height:210px;
+        }
+        .Music-play .content h2 {
+            font-size: 500%;
+        }
+        .Music-play .content p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        /*Login*/
+        .login form{
+            padding:50px 45px;
+
+        }
     }

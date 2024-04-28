@@ -185,7 +185,7 @@
                 <img src="/Resources/Images/WrenEvans.jpg" alt="">
                 <h5 class="play-songname">Phóng Đổ Tim Em
               <br>
-                    <p class="subtitle">Wren Evans, itsnk</p>
+                    <p class="subtitle">Wren Evans, itsnk</p>   
                 </h5>
             </div>
             <div class="play-box">
