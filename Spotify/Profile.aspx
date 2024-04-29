@@ -39,8 +39,10 @@
             </li>
             <div class="create">
                 <i class="fa-solid fa-plus plus"></i>
-                <p class="hover">Create playlist or folder</p>
-                <p class="active">Create a new playlist</p>
+                <p class="hover">Share music to my page</p>
+                <a href="Sharing.aspx">
+                    <p class="active">Sharing now</p>
+                </a>
             </div>
             <li>
                 <div class="sidebar-scroll">
@@ -125,33 +127,12 @@
               </div>
             </div>
             <div id="Playlist" style="padding:0">
-              <h2 style="margin-top: 40px;">Top artists this month</h2>
+              <h2 style="margin-top: 40px;">Sharing Music</h2>
               <p style="margin:10px 20px;
               font-size: 130%;
               color: #a7a7a7">Only visibale to you</p>
-                <ul class="spotify artists user_playlist">
-                    <% 
-                        if (Application[Global.Albums_List] != null)
-                        {
-                            List<Albums> albums = Application[Global.Albums_List] as List<Albums>;
-                            if (albums.Count >= 12)
-                            {
-                                for (int i = 6; i < 7; i++)
-                                {
-                    %>
-                    <a href="Music.aspx?artist=<%=albums[i].Name %>">
-                        <li class="item">
-                            <img src="<%= albums[i].Image %>" title="<%= albums[i].Name %>">
-                            <div class="play-btn"><span><i class="fa-solid fa-play"></i></span></div>
-                            <h4 class="song"><%= albums[i].Name %></h4>
-                            <p class="artist"><%= albums[i].Artist %></p>
-                        </li>
-                    </a>
-                    <% 
-                                }
-                            }
-                        }
-                    %>
+                <ul class="spotify albums sharing_music">
+                   
                 </ul>
               <div class="playlist-song">
                 <h2>Top tracks this month</h2>

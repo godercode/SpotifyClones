@@ -18,8 +18,28 @@ const currentUser = User.find((user) => user.id === UserID);
 // Get the liked albums of the current user or initialize an empty array
 let User_LikedAlbums = currentUser?.LikedAlbums ?? [];
 const User_LikedSongs = currentUser?.LikedSongs ?? [];
+let User_SharingMusic = currentUser?.SharingMusic ?? [];
 
-console.log(User_LikedAlbums);
+let share_songs = songList.filter(e => {
+    return User_SharingMusic.includes(e.name);
+});
+console.log(share_songs);
+const doduLieu100 = () => {
+    let html = "";
+    html = share_songs.map((e, i) => {
+        return `<a href="Music.aspx?name=${e.name}">
+                            <li class="item">
+                                <img src="${e.image}" title="${e.name}">
+                                <div class="play-btn"><span><i class="fa-solid fa-play"></i></span></div>
+                                <h4 class="song">${e.name}</h4>
+                                <p class="artist">${e.artist}</p>
+                            </li>
+                        </a>`;
+    });
+    document.querySelector(".sharing_music").innerHTML = html.join("");
+};
+doduLieu100();
+
 let songs = songList.filter(e => {
     return User_LikedSongs.includes(e.id);
 });

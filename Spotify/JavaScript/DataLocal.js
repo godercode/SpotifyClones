@@ -625,5 +625,10 @@
         path: "../Musics/Chúng Ta Không Thuộc Về Nhau - Official Music Video - Sơn Tùng M-TP.mp3",
     },
 ];
-localStorage.setItem("songs", JSON.stringify(songs));
+const storedSongs = localStorage.getItem("songs");
+
+// Nếu dữ liệu không tồn tại trong localStorage, lưu dữ liệu mặc định vào đó
+if (!storedSongs) {
+    localStorage.setItem("songs", JSON.stringify(songs));
+}
 

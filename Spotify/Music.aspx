@@ -31,12 +31,14 @@
                 <nav class="sidebar-nav box2" style="padding-bottom: 50px; ">
                     <ul>
                         <li>
-                            <div class="library"><i class=" fa-solid fa-book"></i><span>Your Library</span></div>
+                            <div class="library"><i class=" fa-solid fa-book"></i><span>Your Music</span></div>
                         </li>
                         <div class="create">
                             <i class="fa-solid fa-plus plus"></i>
-                            <p class="hover">Create playlist or folder</p>
-                            <p class="active">Create a new playlist</p>
+                            <p class="hover">Share music to my page</p>
+                            <a href="Sharing.aspx">
+                                <p class="active">Sharing now</p>
+                            </a>
                         </div>
                         <li>
                             <div class="sidebar-scroll">

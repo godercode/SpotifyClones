@@ -207,3 +207,6 @@ input:checked + .slider:before {
     font-weight: 400;
     margin-left: 10px;
 }
+.sign_up input[type="file"] {
+    border: dashed 1px #a7a7a7;
+}

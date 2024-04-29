@@ -9,7 +9,8 @@ namespace Spotify
 {
     public class Global : System.Web.HttpApplication
     {
-        public const string Albums_List = "Albums";       
+        public const string Albums_List = "Albums";
+        public const string Albums_sharing = "albums_sharing";
         private List<Albums> createAlbumsList()
         {
             return new List<Albums> {
@@ -30,6 +31,7 @@ namespace Spotify
         protected void Application_Start(object sender, EventArgs e)
         {
             Application[Albums_List] = createAlbumsList();
+            Application[Albums_sharing] = new List<shareMusic>();
         }
 
         protected void Session_Start(object sender, EventArgs e)

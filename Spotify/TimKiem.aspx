@@ -20,9 +20,9 @@
         <div class="container">
             <div class="header-sidebar">
                 <nav class="sidebar-nav">
-                    <img src="../Images/Logo.png" alt="logo spotify">
+                    <img src="../Images/Logo.png" alt="logo spotify"/>
                     <ul>
-                        <li><a href="TrangChu.aspx"><i class="fa-solid fa-house"></i><span>Home</span><a href="TrangChu.aspx"></li>
+                        <li><a href="TrangChu.aspx"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
                         <li style="color: #ffffff">
                             <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
                         </li>
@@ -31,12 +31,14 @@
                 <nav class="sidebar-nav box2">
                     <ul>
                         <li>
-                            <div class="library"><i class=" fa-solid fa-book"></i></i><span>Your Library</span></div>
+                            <div class="library"><i class=" fa-solid fa-book"></i><span>Your Music</span></div>
                         </li>
                         <div class="create">
                             <i class="fa-solid fa-plus plus"></i>
-                            <p class="hover">Create playlist or folder</p>
-                            <p class="active">Create a new playlist</p>
+                            <p class="hover">Share music to my page</p>
+                            <a href="Sharing.aspx">
+                                <p class="active">Sharing now</p>
+                            </a>
                         </div>
                         <li>
                             <div class="sidebar-scroll">
